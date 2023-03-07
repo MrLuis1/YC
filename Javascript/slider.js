@@ -1,6 +1,5 @@
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
-    grabCursor: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

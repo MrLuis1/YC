@@ -106,10 +106,9 @@
       <div class="slide-content">
         <div class="card-wrapper swiper-wrapper">
           <div class="swiper-slide card-container">
-            <div class="product-card">
+            <div class="product-card" id="frida">
               <div class="product-image">
                 <img src="./Assets/Img/Tocados/Tocado-1/card-img.jpeg" alt="" class="product-thumb">
-                <button class="card-btn">Info del producto</button>
               </div>
               <div class="product-info">
                 <p class="product-brand">FRIDA</p>
@@ -118,10 +117,9 @@
             </div>
           </div>
           <div class="swiper-slide card-container">
-            <div class="product-card">
+            <div class="product-card" id="tiana">
               <div class="product-image">
                 <img src="./Assets/Img/Tocados/Tocado-2/card-img.jpeg" alt="" class="product-thumb">
-                <button class="card-btn">Info del producto</button>
               </div>
               <div class="product-info">
                 <p class="product-brand">TIANA</p>
@@ -130,10 +128,9 @@
             </div>
           </div>
           <div class="swiper-slide card-container">
-            <div class="product-card">
+            <div class="product-card" id="martina">
               <div class="product-image">
                 <img src="./Assets/Img/Tocados/Tocado-3/card-img.jpeg" alt="" class="product-thumb">
-                <button class="card-btn">Info del producto</button>
               </div>
               <div class="product-info">
                 <p class="product-brand">MARTINA</p>
@@ -142,10 +139,9 @@
             </div>
           </div>
           <div class="swiper-slide card-container">
-            <div class="product-card">
+            <div class="product-card" id="dafne">
               <div class="product-image">
                 <img src="./Assets/Img/Tocados/Tocado-4/card-img.jpeg" alt="" class="product-thumb">
-                <button class="card-btn">Info del producto</button>
               </div>
               <div class="product-info">
                 <p class="product-brand">DAFNE</p>
@@ -154,10 +150,9 @@
             </div>
           </div>
           <div class="swiper-slide card-container">
-            <div class="product-card">
+            <div class="product-card" id="cirene">
               <div class="product-image">
                 <img src="./Assets/Img/Tocados/Tocado-5/card-img.jpeg" alt="" class="product-thumb">
-                <button class="card-btn">Info del producto</button>
               </div>
               <div class="product-info">
                 <p class="product-brand">CIRENE</p>
@@ -170,6 +165,39 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="modal-container">
+      <div class="modal" data-target="frida">
+        <div>
+          <button class="close-btn">X</button>
+        </div>
+        <h1>frida</h1>
+      </div>
+      <div class="modal" data-target="tiana">
+        <div>
+          <button class="close-btn">X</button>
+        </div>
+        <h1>tiana</h1>
+      </div>
+      <div class="modal" data-target="martina">
+        <div>
+          <button class="close-btn">X</button>
+        </div>
+        <h1>martina</h1>
+      </div>
+      <div class="modal" data-target="dafne">
+        <div>
+          <button class="close-btn">X</button>
+        </div>
+        <h1>dafne</h1>
+      </div>
+      <div class="modal" data-target="cirene">
+        <div>
+          <button class="close-btn">X</button>
+        </div>
+        <h1>cirene</h1>
+      </div>
     </section>
 
     <!-- PREGUNTAS FRECUENTES -->
@@ -420,6 +448,7 @@
   <!-- ANIMATE ON SCROLL JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- javascript -->
+  <script src="./Javascript/modal.js"></script>
   <script src="./Javascript/slider.js"></script>
   <script src="./Javascript/menu.js"></script>
   <script src="./Javascript/faq.js"></script>
