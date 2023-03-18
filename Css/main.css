@@ -9,6 +9,7 @@
     --letra: #2d2d2d;
     --background: #F3F8F2;
     --sombra: 0 0 13px 0 rgba(185,185,185, .25);
+    --sombra: 0 0 8px 0 rgba(198, 174, 37, 0.25);
     --header-height: 5.4rem;
 }
 
@@ -332,8 +333,8 @@ section h2::after {
 .swiper-button-next::after,
 .swiper-button-prev::after {
     color: #000;
+    display: none;
 }
-
 /* 
   
   
@@ -401,10 +402,107 @@ section h2::after {
     margin: auto;
     display: none;
     transition: all 1s ease;
+    padding: 10px;
 }
 
 .modal.active {
     display: block;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 25px;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 45px;
+    font-weight: 250;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    transition: 1s;
+    transform: rotateZ(90deg);
+}
+
+.modal-slide {
+    overflow: hidden;
+}
+
+.modal-image {
+    width: 100%;
+}
+
+.modal-body-movil {
+    text-align: center;
+}
+
+.modal-body-pc {
+    display: none;
+    height: 420px;
+}
+
+.modal-content {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.show-image {
+    width: 55%;
+    height: auto;
+}
+
+.product-description {
+    width: 45%;
+}
+
+.group-image {
+    margin-top: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pc-group-image {
+    width: 80px;
+    height: 70px;  
+    cursor: pointer;  
+}
+
+.selected-image {
+    width: 100%;
+}
+
+.product-description {
+    margin-block-start: 1rem;
+    margin-block-end: .5rem;
+}
+
+.buy-btn-container {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.buy-btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.buy-icon {
+    width: 55px;
 }
 
 /* //////////////////////////////////////////////////// */
@@ -918,6 +1016,11 @@ a {
         cursor: pointer;
     }
 
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        display: inline-block
+    }
+
     .modal {
         border-radius: 10px;
         width: 60%;
@@ -926,6 +1029,14 @@ a {
         margin: auto;
         display: none;
         transition: all 1s ease;
+    }
+
+    .modal-body-movil{
+        display: none;    
+    }
+
+    .modal-body-pc {
+        display: block;
     }
 
     .faq-items {
