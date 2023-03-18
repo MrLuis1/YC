@@ -5,12 +5,12 @@
 
 :root {
     --primario: #C0B283;
-    --letraSecundaria: #503039;
+    --secondary: #EAC67A;
     --letra: #2d2d2d;
     --background: #F3F8F2;
     --sombra: 0 0 13px 0 rgba(185,185,185, .25);
     --sombra: 0 0 8px 0 rgba(198, 174, 37, 0.25);
-    --header-height: 5.4rem;
+    --header-height: 4.05rem;
 }
 
 .bg-light {
@@ -564,16 +564,16 @@ a {
 }
 
 .facebook:hover {
-    background: #3b5998;
+    background: var(--secondary);
 }
 .instagram:hover {
-    background: #c32aa3;
+    background: var(--secondary);
 }
 .youtube:hover {
-    background: #ff0000;
+    background: var(--secondary);
 }
 .tikTok:hover {
-    background: #69c9d0;
+    background: var(--secondary);
 }
 
 /* ////////////////////////////////////////////////// */
@@ -908,7 +908,7 @@ a {
 }
 
 .copyright h6 {
-    font-size: 16px;
+    font-size: 14px;
     color: white;
 }
 
